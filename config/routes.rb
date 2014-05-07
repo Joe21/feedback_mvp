@@ -4,7 +4,7 @@ FeedbackMvp::Application.routes.draw do
 
   resources :feedbacks
 
-  get '/presentation' => 'presentation#index', as: 'presentation'
+  get '/presentation' => 'presentations#index', as: 'presentation'
   get '/feedbacks/:id/delete' => 'feedbacks#destroy', as: 'destroy'
 end
 

@@ -1,6 +1,7 @@
 <h1>Feedbacks Index Page</h1>
 
 <%= link_to 'Add Feedback', new_feedback_path %>
+<hr>
 
 <% @all_feedbacks.each do |feedback| %>
 <ul>
@@ -17,3 +18,5 @@
 	</li>
 </ul>
 <% end %>
+
+<%= link_to 'Client Presentation Link', presentation_path %>
