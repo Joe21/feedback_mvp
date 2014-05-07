@@ -1,0 +1,20 @@
+<h1>Add Feedback</h1>
+
+<%= form_for feedback do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+	<br />
+	<%= f.label :description %>
+	<%= f.text_area :description %>
+	<br />
+	<%= f.label :weight %>
+	<%= f.select :weight, [["1", "1"], ["2", "2"], ["3", "3"], ["4", "4"], ["5", "5"]] %>
+	<br />
+	<%= f.label :date %>
+	<%= f.date_select :date %>
+	<br />
+	<%= f.label :media_link %>
+	<%= f.text_field :media_link %>
+	<br />
+	<%= f.submit %>
+<% end %>

@@ -1,1 +1,12 @@
-hello
+<h1>Feedbacks Index Page</h1>
+
+<%= link_to 'Add Feedback', new_feedback_path %>
+
+<% @all_feedbacks.each do |feedback| %>
+<ul>
+	<li><%= feedback.name %> <br />
+		<%= link_to 'edit feedback', edit_feedback_path(feedback) %><br />
+		<%= link_to 'delete feedback', destroy_path(feedback) %>
+	</li>
+</ul>
+<% end %>
