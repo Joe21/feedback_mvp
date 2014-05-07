@@ -2,7 +2,6 @@ class FeedbacksController < ApplicationController
 	# Display all feedbacks
 	def index
 		@all_feedbacks = Feedback.all
-		# @all_feedbacks = Feedback.order("weight DESC").limit(5)
 	end
 
 	def new

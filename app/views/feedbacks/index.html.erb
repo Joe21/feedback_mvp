@@ -6,7 +6,8 @@
 <ul>
 	<li><%= feedback.name %> <br />
 		<%= link_to 'edit feedback', edit_feedback_path(feedback) %><br />
-		<%= link_to 'delete feedback', destroy_path(feedback) %>
+		<%= link_to 'delete feedback', destroy_path(feedback) %><br />
+		<%= link_to 'images', feedback_images_path(feedback) %>
 	</li>
 </ul>
 <% end %>
