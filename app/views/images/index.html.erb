@@ -1,3 +1,7 @@
+<h1>Images for Feedback Name: <%= @feedback.name %></h1>
+
 <% @images.each do |image| %>
 <%= image.data %>
 <% end %>
+
+<%= link_to "upload_image", new_feedback_image_path %> 
