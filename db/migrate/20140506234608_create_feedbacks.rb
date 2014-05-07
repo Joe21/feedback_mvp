@@ -5,6 +5,7 @@ class CreateFeedbacks < ActiveRecord::Migration
     	t.text :description
     	t.integer :weight
     	t.datetime :date
+      t.string :image_url
       t.string :media_link
     	
       t.timestamps
